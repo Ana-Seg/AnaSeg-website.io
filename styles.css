@@ -1,0 +1,682 @@
+   :root
+   {
+    --background-color: black;
+    --body-color:red;
+    --side-color: red;
+    --heading-color: red;
+    --color-base:rgb(255, 255, 255);
+    --text-color: black;
+ }
+   .arrow{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+/* home section */
+.home-section
+{
+    width: 100%;
+    height: 125vh;
+    background: linear-gradient(90deg, var(--background-color) 65%, var(--side-color) 35%);
+}
+
+/* navbar */
+#navbar{
+    background: var(--background-color);
+
+}
+#logo
+{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--heading-color);
+    letter-spacing: 2px;
+
+}
+.navbar-nav
+{
+    margin-left: 50px;
+    margin-top: 6px;
+    position: fixed;
+}
+.nav-item .nav-link
+{
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px var(--color-base);
+    letter-spacing: 2px;
+     transition: 0.5s ease;
+
+}
+.nav-item .nav-link:hover
+{
+    color: var(--heading-color);
+}
+#btn
+{
+    background: transparent;
+    border: 2px solid black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:991px)
+{
+    #btncv
+    {
+        border: 2px solid var(--heading-color);
+        color: var(--heading-color);
+        margin-left: 20x;
+    }
+}
+ /* navbar */
+
+
+
+
+
+/* home content */
+.home
+{
+    width: 100%;
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img
+{
+    flex: 1 1 300px;
+
+}
+.home .img img
+{
+    width: 60%;
+    margin-left: 30px;
+
+}
+.home .content
+{
+    flex: 1 1 400px;
+    margin-left: 45px;
+}
+.home .content h5
+{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.home .content h3
+{
+    font-size: 50px;
+     color: white;
+}
+.home .content h3 span
+{
+    color: var(--heading-color);
+    font-weight: bold;
+}
+.changecontent::after
+{
+ content: ' ';
+ color: var(--heading-color);
+ font-weight: bold;
+ font-size: 48px;
+ animation: changetext 20s infinite linear;
+}
+@keyframes changetext
+{
+    0%{content: "Web Designer"}
+    10%{content: "Front-end Web Developer"}
+    20%{content: "Back-end  Web Developer"}
+    30%{content: "Fullstack Web Developer"}
+    40%{content: "I am a Web Developer"}
+    50%{content: "I am a Web Developer"}
+    60%{content: "I am a Web Developer"}
+    80%{content: "I am a Web Developer"}
+    100%{content: "I am a Web Developer"}
+}
+.home .content p
+{
+    color: var(--color-base);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+ #btn1
+ {
+    width: 150px;
+    height: 30px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    color: var(--color-base);
+    border: 2px solid var(--heading-color);
+    background: transparent;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+ }
+ #btn1:hover
+{
+    background: var(--heading-color);
+
+ }
+ @media screen and (max-width:844px)
+ {
+   .home-section
+    {
+    height: 146vh;
+    background: black;
+    }
+   .home .content
+   {
+    margin-top: 50px;
+   }
+   #navbar
+    {
+    background: black;
+    }
+ }
+ @media screen and (max-width:650px)
+  {
+    .home-section
+    {
+        height: 130vh;
+    }
+    .img img
+    {
+        margin-top: 30px;
+    }
+}
+ @media screen and (max-width:360px)
+ {
+ .home-section
+ {
+        height: 110vh;
+    }
+ }
+  /* home content */
+/* home section */
+
+
+/* about */
+#about
+{
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+}
+#about .card img
+{
+    background: var(--side-color);
+    border: 2px solid var(--heading-color);
+
+}
+#about span
+{
+    color: var(--heading-color);
+    font-weight: bold;
+}
+#about h3
+{
+    color: var(--heading-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--heading-color);
+    width: 150px;
+    margin-top: 35px;
+
+}
+#about p
+{
+    padding-top: 15px;
+    color: var(--color-base);
+    font-size: 15px;
+}
+#about h2
+{
+    color: var(--color-base);
+    font-size: 17px;
+}
+#about h2 span
+{
+   font-size: 15px;
+   color: var(--heading-color);
+   margin-left: 10px;
+   margin-top: 10px;
+}
+#about a
+{
+    color: var(--heading-color);
+    font-weight: bold;
+}
+#btncv2
+{
+ width: 160px;
+ height: 38px;
+ border-radius: 10px;
+ margin-top: 30px;
+ margin-right: 20px;
+ border-color: var(--heading-color);
+ color: black;
+ transition: 0.5s ease;
+ cursor: pointer;
+}
+#btncv2:hover
+{
+    background-color: var(--heading-color);
+}
+@media screen and (max-width:987px)
+{
+    #about p
+    {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:767px)
+{
+    #about
+    {
+        height: 150vh;
+    }
+    #about p
+    {
+        font-size: 17px;
+    }
+}
+ @media screen and (max-width:500px)
+ {
+    #about
+     {
+        height: 120vh;
+     }
+}
+
+/* about */
+
+
+/* services */
+#skills
+{
+
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+}
+#skills h1{
+    color: red;
+
+}
+#skills h2{
+    color: red;
+    font-weight: bold;
+}
+#skills h3
+{
+    width: 1300px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    color: white;
+    border-bottom: 2px solid var(--heading-color);
+}
+#skills .card
+{
+    background-color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#skills .card:hover
+{
+ background-color: var(--heading-color);
+
+}
+#skills p
+{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--heading-color);
+}
+#skills .card i
+{
+    font-size: 42px;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#skills .card h2
+{
+     font-size: 25px;
+      margin-left: 10px;
+}
+
+@media screen and (max-width:767px)
+{
+    #skills
+    {
+        height: 200vh
+    }
+}
+
+
+/* services */
+
+
+.hr
+{
+    width: 100%;
+    height: 1px;
+    background-color: var(--heading-color);
+}
+
+/* resume */
+#resume
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+#resume h5
+{
+    color: var(--heading-color);
+    padding-top: 100px;
+}
+#resume h1
+{
+    color: white;
+}
+#resume h3
+{
+    color: white;
+    border-bottom: 2px solid var(--heading-color);
+    width: 170px;
+    margin-top: 30px;
+}
+#resume h2
+{
+    color: white;
+    margin-top: 20px;
+    font-size: 26px
+}
+#resume p
+{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#resume i
+{
+    color: var(--heading-color);
+}
+@media screen and (max-width:767px)
+{
+    #resume
+    {
+        height: 150vh;
+    }
+}
+
+/* resume */
+
+
+/* portfolio */
+#portfolio{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+#portfolio .card{
+    background-color: white;
+}
+#portfolio h1{
+
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: var(--color-base);
+    border-bottom: 2px solid var(--heading-color);
+
+}
+#portfolio p{
+    font-size: 25px;
+    color: var(--heading-color);
+}
+#portfolio h2
+{
+    color: var(--heading-color);
+}
+
+#portfolio  img
+{
+    width: 100px;
+    height: 100px;
+}
+#portfolio .card{
+    width: 25rem;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#portfolio .card:hover{
+    background-color: var(--heading-color);
+    transform: translateV(-10PX);
+}
+
+
+@media screen and (max-width:770px){
+    #portfolio{
+        height: 320vh;
+    }
+}
+@media screen and (max-width:460px){
+    #portfolio{
+        height: 260vh;
+    }
+}
+@media screen and (max-width:380px){
+    #portfolio{
+        height: 235vh;
+    }
+}
+@media screen and (max-width:312px){
+    #portfolio{
+        height: 200vh;
+    }
+}
+@media screen and (max-width:300px){
+    #portfolio{
+        height: 190vh;
+    }
+}
+@media screen and (max-width:190px){
+    #portfolio h1{
+        padding-top: 100px;
+    }
+}
+
+    /* portfolio*/
+
+
+
+
+    /* contact */
+    #contact
+    {
+        width: 100%;
+        height: 100vh;
+        background: var(--background-color);
+   }
+    #contact h1
+    {
+        color: white;
+        border-bottom: 2px solid var(--heading-color);
+        width: 210px;
+        padding-top: 100px;
+    }
+    #contact p
+    {
+        color: white;
+    }
+    #contact input
+    {
+          color: white;
+          width: 420px;
+          margin-top: 30px;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid var(--heading-color);
+    }
+    #contact ::placeholder
+    {
+        color: white;
+    }
+    #contact textarea
+    {
+        background: transparent;
+        border: 2px solid var(--heading-color);
+        margin-top: 20px;
+        color: white;
+    }
+    #btncontact
+    {
+        width: 420px;
+        height: 38px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        border-radius: 10px;
+        background: transparent;
+        color: var(--heading-color);
+        border: 2px solid var(--heading-color);
+        transition: 0.5 ease;
+        margin-top: 30px;
+    }
+    #contact  #btncontact:hover
+    {
+        background: var(--heading-color);
+        color: white;
+ }
+
+    #contact i
+    {
+        color: var(--heading-color);
+        margin-top: 30px;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .social-links i
+    {
+        padding-top: 20px;
+        margin-left: 10px;
+        font-size: 20px;
+        border-bottom: 2px solid var(--heading-color);
+    }
+    @media screen and(max-width:995px){
+        #contact input
+        {
+            width: 350px;
+        }
+        #contact textarea{
+            width: 350px;
+        }
+        #contact #btncontact{
+            width: 350px;
+        }
+       }
+    @media screen and(max-width:476px)
+    {
+        #contact input
+        {
+            width: 250px;
+        }
+        #contact textarea{
+            width: 250px;
+        }
+        #contact #btncontact{
+            width: 250px;
+        }
+    }
+    @media screen and(max-width:320px)
+    {
+        #contact imput
+        {
+            width: 180px;
+        }
+        #contact textarea
+        {
+            width: 180px;
+        }
+        #contact #btncontact
+        {
+            width: 180px;
+        }
+    }
+    @media screen and(max-width: 767px)
+    {
+        #contact
+        {
+            height: 150vh;
+        }
+    }
+ /* contact */
+
+
+ /* footer */
+ #footer
+ {
+    width: 100%;
+    background-color: var(--heading-color);
+ }
+ #footer h1
+ {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+ }
+
+ .icons i
+ {
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+ }
+
+ .text-center
+ {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+ }
+
+ /* footer */
+
+
+ html
+ {
+    scroll-behavior: smooth;
+}
+ .arrow
+ {
+    position: fixed;
+    border-radius: 50px;
+    color: white;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 50px;
+ }
+ .arrow :hover
+ {
+    color: var(--heading-color);
+ }
